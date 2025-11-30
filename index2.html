@@ -1,0 +1,1262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Basic SEO -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pallavi Rani | Data Science & AI/ML Enthusiast</title>
+  <meta name="description"
+        content="Portfolio of Pallavi Rani, a 3rd year Data Science & AI/ML enthusiast from Bihar Engineering University, Patna. Explore her skills in Python, Machine Learning, Data Analysis and projects including internship work at BSPHCL & RCPL Kanpur." />
+  <meta name="keywords"
+        content="Pallavi Rani, data science, AI, machine learning, Python, portfolio, Bihar Engineering University Patna, BSPHCL, RCPL Kanpur, studentpallavi" />
+  <link rel="canonical" href="https://your-domain.com/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Pallavi Rani | Data Science & AI/ML Enthusiast" />
+  <meta property="og:description"
+        content="Explore the portfolio of Pallavi Rani, Data Science & AI/ML enthusiast and 3rd year student at Bihar Engineering University, Patna." />
+  <meta property="og:url" content="https://your-domain.com/" />
+  <meta property="og:image" content="https://your-domain.com/pallavi.jpg" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Pallavi Rani | Data Science & AI/ML Enthusiast" />
+  <meta name="twitter:description"
+        content="Data science, AI/ML and Python projects by Pallavi Rani." />
+  <meta name="twitter:image" content="https://your-domain.com/pallavi.jpg" />
+
+  <!-- Favicon (optional) -->
+  <link rel="icon" href="favicon.ico" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Pallavi Rani",
+    "url": "https://your-domain.com/",
+    "image": "https://your-domain.com/pallavi.jpg",
+    "jobTitle": "Data Science & AI/ML Enthusiast",
+    "description": "3rd year student at Bihar Engineering University, Patna, focusing on data science, AI/ML, and Python projects.",
+    "sameAs": [
+      "https://github.com/studentpallavi",
+      "https://www.linkedin.com/in/pallaviranii"
+    ],
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "Bihar Engineering University, Patna"
+    }
+  }
+  </script>
+
+  <style>
+    :root {
+      --bg-dark: #050608;
+      --accent: #ff7b3b;
+      --accent-soft: rgba(255, 123, 59, 0.13);
+      --accent-two: #ffcf33;
+      --accent-three: #1ddf72;
+      --text-main: #ffffff;
+      --text-muted: #c2c2c6;
+      --glass-bg: rgba(15, 16, 24, 0.86);
+      --glass-border: rgba(255, 255, 255, 0.08);
+      --radius-xl: 24px;
+      --shadow-soft: 0 24px 60px rgba(0, 0, 0, 0.6);
+      --max-width: 1120px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: "Poppins", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      background: radial-gradient(circle at top left, #2a1f4f 0, transparent 55%),
+                  radial-gradient(circle at bottom right, #ff7b3b 0, transparent 60%),
+                  var(--bg-dark);
+      color: var(--text-main);
+      min-height: 100vh;
+      line-height: 1.6;
+      overflow-x: hidden;
+      scroll-behavior: smooth;
+    }
+
+    ::selection {
+      background: var(--accent);
+      color: #fff;
+    }
+
+    .page-wrapper {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 24px 16px 40px;
+      display: flex;
+      gap: 24px;
+    }
+
+    /* Left: Main site, Right: label column like reference */
+    .main-shell {
+      flex: 1.2;
+      background: #f3f2ff;
+      border-radius: 32px;
+      overflow: hidden;
+      box-shadow: 0 24px 70px rgba(0, 0, 0, 0.75);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      position: relative;
+    }
+
+    .label-column {
+      flex: 0.8;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      align-self: stretch;
+    }
+
+    .label-card {
+      background: rgba(10, 10, 16, 0.95);
+      border-radius: 24px;
+      padding: 18px 22px;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(24px);
+      box-shadow: var(--shadow-soft);
+    }
+
+    .label-pill-row {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .pill {
+      background: rgba(18, 18, 26, 0.9);
+      border-radius: 999px;
+      padding: 8px 16px;
+      font-size: 0.9rem;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      backdrop-filter: blur(20px);
+      font-weight: 500;
+      white-space: nowrap;
+    }
+
+    .product-title {
+      font-size: 2.45rem;
+      line-height: 1.08;
+      font-weight: 700;
+      letter-spacing: 0.03em;
+    }
+
+    .color-swatches {
+      display: flex;
+      gap: 8px;
+      margin: 10px 0 4px;
+    }
+
+    .swatch {
+      width: 40px;
+      height: 6px;
+      border-radius: 999px;
+    }
+
+    .swatch.orange { background: var(--accent); }
+    .swatch.yellow { background: var(--accent-two); }
+    .swatch.green { background: var(--accent-three); }
+
+    .label-author {
+      margin-top: 8px;
+      font-size: 0.95rem;
+      color: var(--text-muted);
+    }
+
+    /* NAVBAR */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 40;
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 14px 40px;
+      background: rgba(252, 252, 255, 0.95);
+      backdrop-filter: blur(12px);
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-weight: 700;
+      font-size: 1.1rem;
+      color: #111119;
+    }
+
+    .logo-badge {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background: var(--accent);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-weight: 700;
+      font-size: 0.9rem;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      font-size: 0.95rem;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #3b3b46;
+      position: relative;
+      padding-bottom: 3px;
+    }
+
+    .nav-links a::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 0;
+      height: 2px;
+      border-radius: 999px;
+      background: var(--accent);
+      transition: width 0.25s ease;
+    }
+
+    .nav-links a:hover::after,
+    .nav-links a.active::after {
+      width: 100%;
+    }
+
+    .nav-cta {
+      padding: 9px 18px;
+      border-radius: 999px;
+      border: none;
+      background: #111119;
+      color: #fff;
+      font-size: 0.9rem;
+      font-weight: 500;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .nav-cta span.arrow {
+      font-size: 1.1rem;
+      transform: translateY(1px);
+    }
+
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 4px;
+      cursor: pointer;
+    }
+
+    .hamburger span {
+      width: 18px;
+      height: 2px;
+      background: #111119;
+      border-radius: 999px;
+      transition: transform 0.25s ease, opacity 0.25s ease;
+    }
+
+    /* HERO */
+    .hero {
+      display: grid;
+      grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+      padding: 40px 40px 30px;
+      gap: 20px;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before,
+    .hero::after {
+      content: "";
+      position: absolute;
+      filter: blur(60px);
+      opacity: 0.75;
+      pointer-events: none;
+    }
+
+    .hero::before {
+      width: 220px;
+      height: 220px;
+      border-radius: 50%;
+      background: var(--accent-soft);
+      top: 0;
+      left: -80px;
+    }
+
+    .hero::after {
+      width: 260px;
+      height: 260px;
+      border-radius: 50%;
+      background: rgba(34, 35, 60, 0.35);
+      bottom: -40px;
+      right: -100px;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      border-radius: 999px;
+      padding: 6px 14px;
+      font-size: 0.8rem;
+      background: #fff;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+      position: relative;
+      z-index: 1;
+    }
+
+    .badge-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--accent);
+    }
+
+    .hero-title {
+      margin-top: 14px;
+      font-size: clamp(2.4rem, 3vw + 1.2rem, 3.1rem);
+      line-height: 1.1;
+      color: #101019;
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero-title span.name {
+      color: var(--accent);
+    }
+
+    .hero-subtitle {
+      margin-top: 10px;
+      font-size: 1.12rem;
+      color: #34343f;
+      font-weight: 500;
+    }
+
+    .hero-desc {
+      margin-top: 12px;
+      font-size: 0.95rem;
+      color: #5e5e68;
+      max-width: 460px;
+    }
+
+    .hero-meta {
+      margin-top: 18px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .hero-meta-item {
+      display: flex;
+      flex-direction: column;
+      font-size: 0.85rem;
+      color: #5f5f6c;
+    }
+
+    .hero-meta-item strong {
+      font-size: 1.1rem;
+      color: #242431;
+    }
+
+    .hero-cta-row {
+      margin-top: 22px;
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .btn-primary,
+    .btn-ghost {
+      border-radius: 999px;
+      padding: 10px 18px;
+      font-size: 0.9rem;
+      border: none;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: transform 0.18s ease, box-shadow 0.18s ease, background 0.18s ease;
+      text-decoration: none;
+    }
+
+    .btn-primary {
+      background: var(--accent);
+      color: #fff;
+      box-shadow: 0 14px 30px rgba(255, 123, 59, 0.4);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 18px 40px rgba(255, 123, 59, 0.55);
+    }
+
+    .btn-ghost {
+      background: #fff;
+      color: #232331;
+      border: 1px solid rgba(0, 0, 0, 0.08);
+    }
+
+    .btn-ghost:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 14px 30px rgba(0, 0, 0, 0.06);
+    }
+
+    .hero-links {
+      margin-top: 18px;
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      font-size: 0.85rem;
+    }
+
+    .hero-links a {
+      color: #5b5b70;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .hero-links a span.icon {
+      font-size: 1.1rem;
+    }
+
+    /* Hero Right */
+    .hero-right-wrap {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .hero-card {
+      position: relative;
+      width: 100%;
+      max-width: 360px;
+      aspect-ratio: 4 / 5;
+      border-radius: 999px;
+      background: radial-gradient(circle at 20% 0, #ffe5d1 0, #f8cbaa 40%, #f6b890 70%, #fef5ec 100%);
+      overflow: hidden;
+      box-shadow: 0 22px 60px rgba(0, 0, 0, 0.5);
+      border: 1px solid rgba(255, 255, 255, 0.6);
+    }
+
+    .hero-card::before {
+      content: "";
+      position: absolute;
+      inset: 18px 18px 80px;
+      border-radius: inherit;
+      background:
+        linear-gradient(135deg, rgba(255, 255, 255, 0.35), transparent 55%),
+        radial-gradient(circle at 0 0, rgba(255, 255, 255, 0.55), transparent 60%);
+      pointer-events: none;
+      mix-blend-mode: screen;
+    }
+
+    .hero-image {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      padding-bottom: 10px;
+    }
+
+    .hero-image img {
+      width: 85%;
+      height: auto;
+      object-fit: cover;
+      border-radius: 26px;
+      filter: drop-shadow(0 18px 24px rgba(0, 0, 0, 0.4));
+    }
+
+    .hero-tag {
+      position: absolute;
+      bottom: 16px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: rgba(16, 16, 24, 0.9);
+      color: #fff;
+      border-radius: 999px;
+      padding: 7px 16px;
+      font-size: 0.8rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      backdrop-filter: blur(12px);
+    }
+
+    .hero-tag span.dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #4ad66d;
+    }
+
+    .hero-floating-card {
+      position: absolute;
+      right: -4px;
+      top: 16%;
+      transform: translateX(20px);
+      background: rgba(6, 6, 12, 0.92);
+      color: #fff;
+      padding: 12px 16px;
+      border-radius: 16px;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      font-size: 0.8rem;
+      backdrop-filter: blur(18px);
+      box-shadow: 0 18px 30px rgba(0, 0, 0, 0.6);
+      max-width: 170px;
+    }
+
+    .hero-floating-card strong {
+      font-size: 1.2rem;
+    }
+
+    /* MAIN CONTENT SECTIONS INSIDE SHELL */
+
+    main {
+      background: linear-gradient(to bottom, #f3f2ff 0%, #ebeafb 100%);
+    }
+
+    .sections {
+      padding: 8px 24px 32px;
+    }
+
+    .section {
+      margin-top: 22px;
+    }
+
+    .section-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 12px;
+    }
+
+    .section-header h2 {
+      font-size: 1.1rem;
+      color: #20202f;
+    }
+
+    .section-header span.tagline {
+      font-size: 0.8rem;
+      color: #7a7a8c;
+    }
+
+    .glass-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 14px;
+    }
+
+    .glass-card {
+      background: rgba(9, 10, 20, 0.96);
+      border-radius: 18px;
+      padding: 16px 18px;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      box-shadow: var(--shadow-soft);
+      backdrop-filter: blur(18px);
+      color: #f7f7ff;
+      font-size: 0.9rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .glass-card::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at 0 0, rgba(255, 255, 255, 0.12), transparent 55%);
+      opacity: 0.9;
+      pointer-events: none;
+    }
+
+    .glass-card h3 {
+      font-size: 1rem;
+      margin-bottom: 4px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .glass-card p {
+      font-size: 0.82rem;
+      color: #cfcfe4;
+      margin-bottom: 6px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .chip-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: 6px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .chip {
+      font-size: 0.72rem;
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+    }
+
+    .project-meta {
+      margin-top: 4px;
+      font-size: 0.78rem;
+      color: #e6e6ff;
+    }
+
+    .project-links {
+      margin-top: 6px;
+      display: flex;
+      gap: 12px;
+      font-size: 0.8rem;
+    }
+
+    .project-links a {
+      color: #ffd28b;
+      text-decoration: none;
+    }
+
+    .about-text {
+      font-size: 0.85rem;
+      color: #55556a;
+      max-width: 760px;
+    }
+
+    .about-text strong {
+      color: #2a2a3a;
+    }
+
+    .contact-card {
+      background: #111119;
+      color: #f5f5ff;
+      border-radius: 18px;
+      padding: 18px 18px 16px;
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      align-items: center;
+      box-shadow: var(--shadow-soft);
+    }
+
+    .contact-card p {
+      font-size: 0.85rem;
+      color: #d2d2ff;
+    }
+
+    .contact-card small {
+      display: block;
+      margin-top: 4px;
+      font-size: 0.78rem;
+      color: #a7a7d6;
+    }
+
+    .contact-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .contact-pill {
+      font-size: 0.8rem;
+      padding: 8px 14px;
+      border-radius: 999px;
+      background: #22222f;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .contact-pill.primary {
+      background: var(--accent);
+      border-color: transparent;
+      color: #111119;
+      font-weight: 500;
+    }
+
+    footer {
+      padding: 12px 24px 18px;
+      font-size: 0.78rem;
+      color: #78788c;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    footer a {
+      color: #4f4f88;
+      text-decoration: none;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 1200px) {
+      .page-wrapper {
+        flex-direction: column;
+      }
+      .label-column {
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+      .label-card:first-child {
+        flex: 1 1 260px;
+      }
+      .label-card:nth-child(2) {
+        flex: 1 1 180px;
+      }
+    }
+
+    @media (max-width: 900px) {
+      .hero {
+        grid-template-columns: 1fr;
+        padding: 26px 20px 20px;
+      }
+      .hero-right-wrap {
+        order: -1;
+        margin-bottom: 12px;
+      }
+      .hero-card {
+        max-width: 320px;
+      }
+      .nav {
+        padding-inline: 20px;
+      }
+      .sections {
+        padding-inline: 18px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .page-wrapper {
+        padding-inline: 12px;
+      }
+
+      .label-column {
+        flex-direction: column;
+      }
+
+      .nav-links,
+      .nav-cta {
+        display: none;
+      }
+
+      .hamburger {
+        display: flex;
+      }
+
+      .nav-links-mobile {
+        position: absolute;
+        top: 58px;
+        left: 0;
+        right: 0;
+        background: rgba(252, 252, 255, 0.98);
+        padding: 10px 20px 12px;
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+        z-index: 30;
+      }
+
+      .nav-links-mobile a {
+        text-decoration: none;
+        color: #292938;
+        font-size: 0.95rem;
+      }
+
+      .nav-links-mobile .nav-cta-mobile {
+        margin-top: 4px;
+        padding: 8px 16px;
+        border-radius: 999px;
+        border: none;
+        background: #111119;
+        color: #fff;
+        font-size: 0.86rem;
+      }
+
+      .nav-links-mobile.open {
+        display: flex;
+      }
+
+      .hero-title {
+        font-size: 2.2rem;
+      }
+    }
+
+    @media (max-width: 520px) {
+      .hero-card {
+        max-width: 260px;
+      }
+      .sections {
+        padding-inline: 14px;
+      }
+      .contact-card {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+  </style>
+</head>
+
+<body>
+<div class="page-wrapper">
+  <!-- MAIN SHELL (LEFT) -->
+  <div class="main-shell">
+
+    <header id="top">
+      <nav class="nav">
+        <div class="logo">
+          <div class="logo-badge">P</div>
+          <span>Pallavi.</span>
+        </div>
+
+        <div class="nav-links">
+          <a href="#home" class="active">Home</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </div>
+
+        <button class="nav-cta" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
+          Let’s Collaborate <span class="arrow">↗</span>
+        </button>
+
+        <div class="hamburger" id="hamburger">
+          <span></span><span></span><span></span>
+        </div>
+      </nav>
+
+      <!-- Mobile nav -->
+      <div class="nav-links-mobile" id="mobileNav">
+        <a href="#home">Home</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <button class="nav-cta-mobile"
+                onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
+          Let’s Collaborate
+        </button>
+      </div>
+    </header>
+
+    <main id="home">
+      <!-- HERO -->
+      <section class="hero">
+        <div class="hero-left">
+          <div class="badge">
+            <span class="badge-dot"></span>
+            <span>Open to Internships & Projects</span>
+          </div>
+
+          <h1 class="hero-title">
+            I’m <span class="name">Pallavi Rani</span>,<br />
+            Data Science &amp; AI/ML Enthusiast
+          </h1>
+
+          <p class="hero-subtitle">
+            3rd Year · Bihar Engineering University, Patna
+          </p>
+
+          <p class="hero-desc">
+            I love turning messy datasets into clear, actionable insights using
+            Python, statistics and machine learning. I enjoy building data-driven
+            solutions that actually help people and organisations make better decisions.
+          </p>
+
+          <div class="hero-meta">
+            <div class="hero-meta-item">
+              <strong>Data &amp; AI</strong>
+              <span>Python · ML · Analytics</span>
+            </div>
+            <div class="hero-meta-item">
+              <strong>Internships</strong>
+              <span>BSPHCL · RCPL Kanpur</span>
+            </div>
+          </div>
+
+          <div class="hero-cta-row">
+            <a href="#projects" class="btn-primary">
+              View Projects <span>↗</span>
+            </a>
+            <a href="#skills" class="btn-ghost">
+              Explore Skills
+            </a>
+          </div>
+
+          <div class="hero-links">
+            <a href="https://github.com/studentpallavi" target="_blank" rel="noopener">
+              <span class="icon">★</span> @studentpallavi
+            </a>
+            <a href="https://www.linkedin.com/in/pallaviranii" target="_blank" rel="noopener">
+              <span class="icon">in</span> pallaviranii
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-right-wrap">
+          <div class="hero-card">
+            <div class="hero-image">
+              <!-- Replace src with actual image name if different -->
+              <img src="pallavi.jpg" alt="Portrait of Pallavi Rani" />
+            </div>
+            <div class="hero-tag">
+              <span class="dot"></span>
+              <span>Always learning from data.</span>
+            </div>
+          </div>
+
+          <div class="hero-floating-card">
+            <div>Focused on</div>
+            <strong>Data Science</strong>
+            <div>AI · ML · Python · Analytics</div>
+          </div>
+        </div>
+      </section>
+
+      <div class="sections">
+        <!-- SKILLS -->
+        <section class="section" id="skills">
+          <div class="section-header">
+            <h2>Skills & Focus Areas</h2>
+            <span class="tagline">What Pallavi loves working on</span>
+          </div>
+
+          <div class="glass-grid">
+            <article class="glass-card">
+              <h3>Data Analysis & Storytelling</h3>
+              <p>
+                Cleaning data, finding patterns and communicating insights using
+                visualisations and simple language that anyone can understand.
+              </p>
+              <div class="chip-row">
+                <span class="chip">Exploratory Data Analysis</span>
+                <span class="chip">Pandas</span>
+                <span class="chip">Matplotlib</span>
+                <span class="chip">Seaborn</span>
+              </div>
+            </article>
+
+            <article class="glass-card">
+              <h3>Machine Learning</h3>
+              <p>
+                Building and evaluating ML models that solve real-world problems,
+                from prediction to classification tasks.
+              </p>
+              <div class="chip-row">
+                <span class="chip">Scikit-learn</span>
+                <span class="chip">Regression</span>
+                <span class="chip">Classification</span>
+                <span class="chip">Model Evaluation</span>
+              </div>
+            </article>
+
+            <article class="glass-card">
+              <h3>Python for Data</h3>
+              <p>
+                Writing clean and modular Python code for data pipelines,
+                experiments and quick prototypes.
+              </p>
+              <div class="chip-row">
+                <span class="chip">NumPy</span>
+                <span class="chip">Pandas</span>
+                <span class="chip">Jupyter Notebook</span>
+                <span class="chip">Data Pipelines</span>
+              </div>
+            </article>
+
+            <article class="glass-card">
+              <h3>Databases & Tools</h3>
+              <p>
+                Working with structured data, dashboards and collaboration tools
+                that support the full data science workflow.
+              </p>
+              <div class="chip-row">
+                <span class="chip">SQL Basics</span>
+                <span class="chip">Excel</span>
+                <span class="chip">Git &amp; GitHub</span>
+                <span class="chip">Documentation</span>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- PROJECTS -->
+        <section class="section" id="projects">
+          <div class="section-header">
+            <h2>Featured Project</h2>
+            <span class="tagline">Real work from internships</span>
+          </div>
+
+          <div class="glass-grid">
+            <article class="glass-card">
+              <h3>Power & Energy Data Analysis</h3>
+              <p>
+                During her internship with <strong>BSPHCL</strong> and
+                <strong>RCPL Kanpur</strong>, Pallavi analysed operational and
+                consumption data to uncover patterns and support decision-making.
+              </p>
+              <p class="project-meta">
+                Tasks included data cleaning, building descriptive reports,
+                trend analysis and presenting findings to the technical team.
+              </p>
+              <div class="chip-row">
+                <span class="chip">Python</span>
+                <span class="chip">Pandas</span>
+                <span class="chip">Time-series Exploration</span>
+                <span class="chip">Reporting</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/studentpallavi" target="_blank" rel="noopener">
+                  View related notebooks ↗
+                </a>
+              </div>
+            </article>
+
+            <article class="glass-card">
+              <h3>Academic & Personal Learning</h3>
+              <p>
+                Along with internships, Pallavi regularly experiments with public
+                datasets to sharpen her skills and explore new ML techniques.
+              </p>
+              <p class="project-meta">
+                Includes Kaggle-style projects, data visualisation mini-projects
+                and small machine learning experiments.
+              </p>
+              <div class="chip-row">
+                <span class="chip">Kaggle Datasets</span>
+                <span class="chip">EDA</span>
+                <span class="chip">Model Prototyping</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/studentpallavi" target="_blank" rel="noopener">
+                  Explore repositories ↗
+                </a>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section class="section" id="about">
+          <div class="section-header">
+            <h2>About Pallavi</h2>
+            <span class="tagline">A quick snapshot</span>
+          </div>
+          <p class="about-text">
+            <strong>Pallavi Rani</strong> is a third-year student at
+            <strong>Bihar Engineering University, Patna</strong>, deeply
+            interested in <strong>data science, artificial intelligence,
+            machine learning and Python development</strong>. She enjoys
+            understanding how systems behave through data and believes that
+            even small insights can create a big difference when they are
+            clearly explained and shared with the right people.<br /><br />
+            Outside of academics, she likes exploring new tools, contributing
+            to projects on GitHub and learning from the data science
+            community. She is actively looking for opportunities where she can
+            learn from experienced teams and add value with her curiosity,
+            discipline and problem-solving mindset.
+          </p>
+        </section>
+
+        <!-- CONTACT -->
+        <section class="section" id="contact">
+          <div class="section-header">
+            <h2>Let’s Build Something</h2>
+            <span class="tagline">Internships · Projects · Collaborations</span>
+          </div>
+
+          <div class="contact-card">
+            <div>
+              <p>
+                Want to discuss a data-driven project, internship opportunity,
+                or collaboration idea? Reach out and Pallavi will get back to
+                you as soon as possible.
+              </p>
+              <small>
+                Preferred domains: data analysis, machine learning, AI-powered
+                solutions and Python-based tools.
+              </small>
+            </div>
+            <div class="contact-actions">
+              <!-- Replace mailto with real email when you have it -->
+              <a class="contact-pill primary" href="mailto:hello@yourmail.com">
+                ✉ Email Pallavi
+              </a>
+              <a class="contact-pill" href="https://www.linkedin.com/in/pallaviranii"
+                 target="_blank" rel="noopener">
+                in Connect on LinkedIn
+              </a>
+              <a class="contact-pill" href="https://github.com/studentpallavi"
+                 target="_blank" rel="noopener">
+                ★ GitHub Profile
+              </a>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <footer>
+        <span>© <span id="year"></span> Pallavi Rani. All rights reserved.</span>
+        <span>
+          Designed with a glassmorphism-inspired layout ·
+          <a href="#top">Back to top ↑</a>
+        </span>
+      </footer>
+    </main>
+  </div>
+
+  <!-- RIGHT LABEL COLUMN (like in screenshot) -->
+  <div class="label-column">
+    <div class="label-card">
+      <div class="label-pill-row" style="margin-bottom: 16px;">
+        <span class="pill">Working Prototype</span>
+        <span class="pill">Fully Auto Layout</span>
+      </div>
+      <h2 class="product-title">
+        Data Science<br />
+        Portfolio
+      </h2>
+      <div class="color-swatches">
+        <div class="swatch orange"></div>
+        <div class="swatch yellow"></div>
+        <div class="swatch green"></div>
+      </div>
+      <div class="label-author">
+        By Pallavi Rani · Inspired glassmorphism design
+      </div>
+    </div>
+
+    <div class="label-card">
+      <div class="label-pill-row">
+        <span class="pill">Animations</span>
+        <span class="pill">Glassmorphism</span>
+        <span class="pill">Responsive UI</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  // Mobile nav toggle
+  const hamburger = document.getElementById('hamburger');
+  const mobileNav = document.getElementById('mobileNav');
+
+  hamburger.addEventListener('click', () => {
+    mobileNav.classList.toggle('open');
+    hamburger.classList.toggle('open');
+
+    const spans = hamburger.querySelectorAll('span');
+    if (hamburger.classList.contains('open')) {
+      spans[0].style.transform = 'translateY(6px) rotate(45deg)';
+      spans[1].style.opacity = '0';
+      spans[2].style.transform = 'translateY(-6px) rotate(-45deg)';
+    } else {
+      spans[0].style.transform = '';
+      spans[1].style.opacity = '1';
+      spans[2].style.transform = '';
+    }
+  });
+
+  // Close mobile nav after clicking a link
+  mobileNav.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      mobileNav.classList.remove('open');
+      hamburger.classList.remove('open');
+      const spans = hamburger.querySelectorAll('span');
+      spans[0].style.transform = '';
+      spans[1].style.opacity = '1';
+      spans[2].style.transform = '';
+    });
+  });
+
+  // Highlight active nav link on scroll
+  const sections = document.querySelectorAll('main section');
+  const navLinks = document.querySelectorAll('.nav-links a');
+
+  function setActiveLink() {
+    let current = 'home';
+    const scrollY = window.pageYOffset;
+
+    sections.forEach(section => {
+      const top = section.offsetTop - 120;
+      const height = section.offsetHeight;
+      if (scrollY >= top && scrollY < top + height) {
+        current = section.id;
+      }
+    });
+
+    navLinks.forEach(link => {
+      link.classList.remove('active');
+      const href = link.getAttribute('href').replace('#', '');
+      if (href === current) {
+        link.classList.add('active');
+      }
+    });
+  }
+
+  window.addEventListener('scroll', setActiveLink);
+
+  // Simple fade-in animation for glass cards
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.style.opacity = '1';
+        entry.target.style.transform = 'translateY(0)';
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.18 });
+
+  document.querySelectorAll('.glass-card').forEach(card => {
+    card.style.opacity = '0';
+    card.style.transform = 'translateY(18px)';
+    card.style.transition = 'opacity 0.45s ease, transform 0.45s ease';
+    observer.observe(card);
+  });
+
+  // Current year in footer
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
