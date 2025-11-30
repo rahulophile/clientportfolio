@@ -821,7 +821,8 @@ main {
 }
 @media (max-width: 520px){
   .hero-floating-card{
-    right:20px
+    right:0px;
+    top:16px
   }
   .hero-tag{
     padding: px 12px;     /* smaller pill */
